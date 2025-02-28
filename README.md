@@ -37,36 +37,48 @@ web crawler spider 爬虫
 
 以下是一些常用的网络爬虫工具：
 
-:::contextList
-【{"image_fetch": "Scrapy logo"}】
-**Scrapy**  
-一个用Python编写的开源网络爬虫框架，功能强大，适用于大规模爬取任务。 citeturn0search11
-:::
+## Python 网络爬虫相关库介绍
 
-:::contextList
-【{"image_fetch": "HTTrack logo"}】
-**HTTrack**  
-一个自由、开源的网络爬虫和离线浏览器，支持多种操作系统，适合下载整个网站进行离线浏览。 citeturn0search10
-:::
+在使用 Python 进行网络爬虫开发时，以下库和框架是常用且实用的工具：
 
-:::contextList
-【{"image_fetch": "Beautiful Soup logo"}】
-**Beautiful Soup**  
-一个Python库，用于从HTML和XML文件中提取数据，常与requests库配合使用，适合小规模爬取任务。
-:::
+### 1. 网络请求库
 
-:::contextList
-【{"image_fetch": "Selenium logo"}】
-**Selenium**  
-一个用于自动化Web浏览器操作的工具，支持多种编程语言，适合需要模拟用户行为的爬取任务。
-:::
+- **`requests`**：一个简单而优雅的 HTTP 库，支持发送各种 HTTP 请求，如 GET、POST 等，处理响应也非常方便。
 
-:::contextList
-【{"image_fetch": "Puppeteer logo"}】
-**Puppeteer**  
-一个Node.js库，提供了一个高级API来控制Chrome或Chromium浏览器，适合需要渲染JavaScript的页面的爬取任务。
-:::
+- **`urllib`**：Python 标准库中的模块，提供了处理 URL 的功能，包括发送请求、解析 URL 等。
 
-## 结语
+- **`aiohttp`**：基于 `asyncio` 的异步 HTTP 客户端/服务器库，适用于需要高并发的场景。
 
-网络爬虫是获取互联网信息的重要工具，但在使用时需遵守相关法律法规和道德规范，避免对目标网站造成不良影响。 >
+### 2. HTML 解析库
+
+- **`BeautifulSoup`**：用于解析 HTML 和 XML 文档，提供了简单的 API 来遍历和搜索文档树。
+
+- **`lxml`**：高效的 HTML 和 XML 处理库，支持 XPath 和 XSLT，性能优异。
+
+- **`pyquery`**：类似于 jQuery 的 Python 实现，提供了类似 jQuery 的 API 来操作和解析 HTML 文档。
+
+### 3. 网络爬虫框架
+
+- **`Scrapy`**：一个功能强大的网络爬虫框架，支持异步处理，适用于大规模爬取任务。
+
+- **`Selenium`**：用于自动化控制浏览器，适合需要模拟用户行为的爬取任务，如处理 JavaScript 渲染的页面。
+
+- **`PySpider`**：一个强大的分布式爬虫系统，支持任务调度、分布式爬取等功能。
+
+### 4. 数据存储库
+
+- **`pandas`**：用于数据处理和分析，支持从多种数据源读取数据，并提供丰富的数据处理功能。
+
+- **`SQLAlchemy`**：一个 SQL 工具包和对象关系映射（ORM）库，方便与数据库进行交互。
+
+- **`pymongo`**：用于与 MongoDB 数据库进行交互，支持 CRUD 操作。
+
+### 5. 其他实用库
+
+- **`fake_useragent`**：用于生成随机的 User-Agent，帮助模拟不同的浏览器请求，避免被反爬虫机制识别。
+
+- **`tesserocr`**：一个 OCR 库，在遇到验证码（图形验证码为主）的时候，可直接用 OCR 进行识别。
+
+- **`redis`**：用于实现分布式爬虫的任务队列和数据存储，支持高效的键值存储。
+
+在实际开发中，可以根据具体需求选择合适的库和框架，组合使用以实现高效、稳定的网络爬虫。 
